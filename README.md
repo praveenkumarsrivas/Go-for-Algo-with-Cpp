@@ -1,3 +1,3 @@
 # Codes for Algorithms in C++
 
-Different Algorithms have been covering here using C++.
+Different Algorithms are implemented using C++.
