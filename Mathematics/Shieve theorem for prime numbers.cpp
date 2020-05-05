@@ -13,12 +13,16 @@ void shieve_fun(int n){
             }
         }
     }
-	long long int res=1;
+	long long int res=0;
     for(int i=2;i<=n;i++){
-        if(prime[i])
-        res*=i;
+        if(prime[i]){
+             cout<<i<<" "; //generate the all prime numbers
+             res++;
+        }
+
     }
-    cout<<res<<endl;
+    cout<<endl;
+    cout<<"Total Prime numbers till "<<n<<" is "<<res<<endl;
 }
 int main()
  {
