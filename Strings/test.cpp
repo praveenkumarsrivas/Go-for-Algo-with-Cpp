@@ -1,23 +1,20 @@
-//this file contain only testing part.
-
 #include <bits/stdc++.h>
 using namespace std;
 int main()
 {
-    string str;
-    int n = str.length();
-    int c = 1;
-    for (int i = 0; i < n; i++)
+    int t;
+    cin >> t;
+    while (t--)
     {
-        if (i + 1 != n && str[i] == str[i + 1])
-            c++;
-        else
+        int a, b;
+        cin >> a >> b;
+        int s = 0;
+        for (int i = a; i <= b; i++)
         {
-            cout << str[i] << c;
-            c = 1;
+            s += __builtin_popcount(i);
         }
+        cout << s << endl;
     }
-    
 
     return 0;
 }
