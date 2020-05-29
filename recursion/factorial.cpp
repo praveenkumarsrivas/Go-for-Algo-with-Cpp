@@ -4,7 +4,7 @@ using namespace std;
 int fact(int n)
 {
     if (n == 0)
-        return 1;
+        return  1;
     int small_ans = fact(n - 1);
     return n * small_ans;
 }
