@@ -21,12 +21,13 @@ int binary_search(int arr[],int n,int key)
 }
 int main() {
     int arr[10];
-    int i=0;
-    for(i=0;i<10;i++)
+    int n;
+    cin>>n;
+    for(int i=0;i<n;i++)
     cin>>arr[i];
-    sort(arr,arr+10); //in case the elemets inserted unsorted
+    sort(arr,arr+n); //in case the elemets inserted unsorted
     int key; //key to be searched
     cin>>key;
-    binary_search(arr,10,key)?cout<<"Found ":cout<<"Not Found"<<endl; //function called
+    binary_search(arr,n,key)?cout<<"Found ":cout<<"Not Found"<<endl; //function called
     return 0;
 }
