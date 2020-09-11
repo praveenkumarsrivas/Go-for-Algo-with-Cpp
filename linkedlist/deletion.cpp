@@ -1,3 +1,5 @@
+// Deleting the node from any position from a linkedlist.
+
 #include <bits/stdc++.h>
 using namespace std;
 class Node
@@ -86,6 +88,7 @@ void DeleteAtRandom(Node *&head, int p)
         return;
     }
 }
+
 int main()
 {
     Node *head = NULL;
@@ -95,7 +98,12 @@ int main()
     CreateList(head, 6);
     CreateList(head, 100);
     printLL(head);
-    DeleteAtRandom(head, 4);
+    cout << "enter the position of the node >: ";
+    int p;
+    cin >> p;
+    DeleteAtRandom(head, p);
     printLL(head);
+
     return 0;
 }
+
