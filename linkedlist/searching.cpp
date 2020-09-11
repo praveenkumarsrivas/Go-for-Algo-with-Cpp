@@ -35,6 +35,17 @@ void print(Node *head)
     }
     cout << endl;
 }
+bool searching(Node *head, int key)
+{
+    while (head != NULL)
+    {
+        if (head->data == key)
+            return true;
+
+        head = head->next;
+    }
+    return false;
+}
 int main()
 {
     Node *head = NULL;
@@ -43,6 +54,14 @@ int main()
     create_list(head, 3);
     create_list(head, 4);
     print(head);
+    cout << "Enter key to search in the list: >";
+    int key;
+    cin >> key;
+    if (searching(head, key))
+        cout << "Element Found!" << endl;
+    else
+        cout << "Element Not Found!" << endl;
 
     return 0;
 }
+
