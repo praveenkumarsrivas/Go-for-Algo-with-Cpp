@@ -104,6 +104,3 @@ int main()
 //OUTPUT:
 // 2th Node of linked list: 2
 
-git add -A
-git commit -m "commit for kth node from end"
-git push -u origin master
